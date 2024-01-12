@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    git 'https://github.com/votre-utilisateur/votre-projet-flutter.git'
+                    git 'https://github.com/Olfasalem/appflutter.git'
                 }
             }
         }
