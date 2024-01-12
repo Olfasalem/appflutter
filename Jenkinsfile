@@ -25,6 +25,14 @@ pipeline {
                 }
             }
         }
+        stage('Flutter Doctor') {
+            steps {
+                script {
+                    echo "Running Flutter doctor"
+                    bat 'flutter doctor'
+                }
+            }
+        }
 
         stage('Flutter Packages') {
             steps {
